@@ -1,0 +1,69 @@
+ZooTopia
+Overview
+The Zoo Management System is a Java-based application designed to manage a zoo's attractions, animals, visitors, and financial transactions.
+This README provides an overview of the system, how it works, and assumptions made during its development.
+It includes the following features:
+Attraction Management:
+Add, update, and remove attractions.
+Set ticket prices and opening/closing times.
+Maintain available visit counts and track total revenue.
+Animal Management:
+Add, view, and remove animals from attractions.
+Specify details for each animal, such as name, type, description, and the noise it makes.
+Visitor Management:
+Register and log in visitors.
+Handle visitor memberships and purchase history. Allow visitors to buy tickets for open attractions. Apply discounts and special deals.
+Special Deals:
+Create special deals for attractions based on visitor count. Apply discounts to visitor purchases.
+Feedback System:
+Allow visitors to provide feedback about their experiences.
+Running the Application
+Set the Main class as the main class in your IDE. Run the application.
+Assumptions
+To provide context for the code and application, we've made some assumptions:
+ Each attraction can have animals associated with it.
+Attraction descriptions can be updated and include information such as open hours. Visitors can register and log in.
+Membership purchase is part of the system, with basic and premium membership options. Visitors can provide feedback.
+The application manages ticket sales for open attractions.
+Discounts and special deals can be created and applied.
+Only unique animal names
+Usage
+When running the application, you can create and manage attractions by adding animals, updating details, and controlling opening and closing times.
+Visitors can register and log in to the system. They can purchase memberships, buy tickets, and receive discounts based on special deals and discount codes.
+Visitors can leave feedback on attractions.
+The system tracks revenue, visitor purchase history, and feedback.
+Explaining Classes
+Visitor Class:
+The Visitor class represents a visitor to the zoo. It stores visitor information, including name, age, balance, email, and password. Visitors can also track their visited attractions, purchase history, and feedback.
+Visitors can register and log in using their email and password. Once logged in, they can perform various actions, such as viewing attractions, buying tickets, and providing feedback.
+Zoo Class:
+The Zoo class manages zoo-related data. It maintains lists of animals and attractions within the zoo. The zoo can add new attractions, view existing attractions, add animals to attractions, and remove animals. The class also contains methods to fetch animals and attractions.
+Attraction Class:
+The Attraction class represents the various attractions within the zoo. Each attraction has attributes like its name, description, ticket prices, opening/closing times, and a list of associated animals.
+Attraction management includes adding new attractions, updating attraction details, managing available visits, and tracking total revenue. The system can also set attractions as open or closed.
+
+Animal Class:
+The Animal class represents individual animals in the zoo. Each animal has attributes like name, type, description, and the sound it makes.
+SpecialDeal Class:
+The SpecialDeal class allows the creation of special deals for attractions based on the number of visitors. These deals are used to apply discounts.
+Purchase Class:
+The Purchase class stores details about purchases made by visitors. It includes information such as the purchase description (e.g., ticket or membership) and the purchase amount.
+Discount Class:
+The Discount class is used to define various discount codes, including their category and discount percentage.
+Reptile Class, Mammal Class, Amphibian Class:
+These classes extend the Animal class to represent specific types of animals, including reptiles, mammals, and amphibians. They provide animal details and the noise they make.
+Flow of the Code:
+System Initialization:
+The program starts by initializing a zoo object (Zoo zoo) and a list of registered visitors. Visitor Registration and Login:
+Visitors can register with their information (name, age, email, password) or log in with their credentials. The system verifies the login details.
+Attraction and Animal Management:
+The zoo can add new attractions and manage them, including setting opening times and ticket prices. Animals can be added to or removed from attractions.
+Visitor Interaction:
+Logged-in visitors can view attractions and animals in the zoo.
+They can also purchase memberships, buy tickets, and apply discounts based on available deals and discount codes.
+Feedback System:
+Visitors can provide feedback on their experiences, which is stored for future reference. Revenue Tracking:
+The system keeps track of the total revenue generated from visitor purchases.
+Other Functionalities:
+Special deals can be created for attractions.
+The system also manages discount codes and tracks the history of visitor purchases.
